@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food_beverage">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/empty_frame" />
+
+    <Button
+        android:id="@+id/fb_backBtn"
+        android:layout_width="71dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/red"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/booking_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="24dp"
+        android:text="Food and Beverage"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="44dp"
+        android:text="Room: "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/booking_title2" />
+
+    <TextView
+        android:id="@+id/fb_RoomTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="A501"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/booking_title2" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Chicken Chop  RM13.90"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Spaghetti          RM8.90"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Fish 'n' Chips    RM13.90"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Mac n Cheese  RM9.90"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Champagne      RM129.90"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Red Wine           RM64.90"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Button
+        android:id="@+id/fb_chickenChopPlusBtn"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="92dp"
+        android:background="@color/design_default_color_background"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fb_chickenChopQtyTV"
+        app:layout_constraintTop_toBottomOf="@+id/booking_title2" />
+
+    <Button
+        android:id="@+id/fb_fishChipsPlusBtn"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/design_default_color_background"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fb_fishChipsQtyTV"
+        app:layout_constraintTop_toBottomOf="@+id/fb_spaghettiPlusBtn" />
+
+    <Button
+        android:id="@+id/fb_macCheesePlusBtn"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/design_default_color_background"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/fb_macCheeseQtyTV"
+        app:layout_constraintTop_toBottomOf="@+id/fb_fishChipsPlusBtn" />
+
+    <Button
+        android:id="@+id/fb_champagnePlusBtn"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/design_default_color_background"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fb_champagneQtyTV"
+        app:layout_constraintTop_toBottomOf="@+id/fb_macCheesePlusBtn" />
+
+    <Button
+        android:id="@+id/fb_redWinePlusBtn"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/design_default_color_background"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/fb_redWineQtyTV"
+        app:layout_constraintTop_toBottomOf="@+id/fb_champagnePlusBtn" />
+
+    <Button
+        android:id="@+id/fb_spaghettiPlusBtn"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/design_default_color_background"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fb_fishChipsQtyTV"
+        app:layout_constraintTop_toBottomOf="@+id/fb_chickenChopPlusBtn" />
+
+    <Button
+        android:id="@+id/fb_chickenChopMinusBtn"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:background="@color/design_default_color_background"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/booking_title2" />
+
+    <Button
+        android:id="@+id/fb_spaghettiMinusBtn"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/design_default_color_background"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/fb_chickenChopMinusBtn" />
+
+    <Button
+        android:id="@+id/fb_fishChipsMinusBtn"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/design_default_color_background"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/fb_spaghettiMinusBtn" />
+
+    <Button
+        android:id="@+id/fb_macCheeseMinusBtn"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/design_default_color_background"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/fb_fishChipsMinusBtn" />
+
+    <Button
+        android:id="@+id/fb_champagneMinusBtn"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/design_default_color_background"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/fb_macCheeseMinusBtn" />
+
+    <Button
+        android:id="@+id/fb_redWineMinusBtn"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/design_default_color_background"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/fb_champagneMinusBtn" />
+
+    <TextView
+        android:id="@+id/fb_chickenChopQtyTV"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="92dp"
+        android:background="@color/white"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/fb_chickenChopMinusBtn"
+        app:layout_constraintTop_toBottomOf="@+id/booking_title2" />
+
+    <TextView
+        android:id="@+id/fb_fishChipsQtyTV"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/fb_fishChipsMinusBtn"
+        app:layout_constraintTop_toBottomOf="@+id/fb_spaghettiQtyTV" />
+
+    <TextView
+        android:id="@+id/fb_macCheeseQtyTV"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/fb_macCheeseMinusBtn"
+        app:layout_constraintTop_toBottomOf="@+id/fb_fishChipsQtyTV" />
+
+    <TextView
+        android:id="@+id/fb_champagneQtyTV"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/white"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/fb_champagneMinusBtn"
+        app:layout_constraintTop_toBottomOf="@+id/fb_macCheeseQtyTV" />
+
+    <TextView
+        android:id="@+id/fb_redWineQtyTV"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/fb_redWineMinusBtn"
+        app:layout_constraintTop_toBottomOf="@+id/fb_champagneQtyTV" />
+
+    <TextView
+        android:id="@+id/fb_spaghettiQtyTV"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/fb_spaghettiMinusBtn"
+        app:layout_constraintTop_toBottomOf="@+id/fb_chickenChopQtyTV" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="32dp"
+        android:text="Total = "
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fb_redWineQtyTV" />
+
+    <TextView
+        android:id="@+id/fb_totalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/fb_redWineMinusBtn" />
+
+    <Button
+        android:id="@+id/fb_cancelBtn"
+        android:layout_width="160dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/red"
+        android:text="@android:string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fb_confirmBtn"
+        android:layout_width="160dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/button_Green"
+        android:text="@string/confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

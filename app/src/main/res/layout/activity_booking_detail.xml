@@ -23,7 +23,7 @@
     <Button
         android:id="@+id/bd_CheckOutBtn"
         android:layout_width="160dp"
-        android:layout_height="54dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="8dp"
         android:background="@color/red"
@@ -62,7 +62,7 @@
     <Button
         android:id="@+id/bd_CheckInBtn"
         android:layout_width="160dp"
-        android:layout_height="54dp"
+        android:layout_height="50dp"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="8dp"
         android:background="@color/button_Green"
@@ -87,7 +87,7 @@
         android:id="@+id/imageView3"
         android:layout_width="239dp"
         android:layout_height="161dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bookingDetail_title"

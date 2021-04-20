@@ -60,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="160dp"
         android:text="Towel"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -72,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:text="Soap"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -84,7 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:text="Pillow"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -96,7 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:text="Toothpaste"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -108,7 +108,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:text="Tissue"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -120,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:text="Hanger"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -133,10 +133,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="160dp"
+        android:buttonTint="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView22"
-        app:layout_constraintTop_toTopOf="parent"
-        android:buttonTint="@color/white"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/ri_soapcheckBox"
@@ -144,10 +144,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="184dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView24"
-        app:layout_constraintTop_toBottomOf="@+id/ri_towelcheckBox"
-        android:buttonTint="@color/white"/>
+        app:layout_constraintTop_toBottomOf="@+id/ri_towelcheckBox" />
 
     <CheckBox
         android:id="@+id/ri_pillowcheckBox"
@@ -155,10 +155,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="174dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView25"
-        app:layout_constraintTop_toBottomOf="@+id/ri_soapcheckBox"
-        android:buttonTint="@color/white"/>
+        app:layout_constraintTop_toBottomOf="@+id/ri_soapcheckBox" />
 
     <CheckBox
         android:id="@+id/ri_toothpastecheckBox"
@@ -166,10 +166,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="33dp"
+        android:buttonTint="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView27"
-        app:layout_constraintTop_toBottomOf="@+id/ri_pillowcheckBox"
-        android:buttonTint="@color/white"/>
+        app:layout_constraintTop_toBottomOf="@+id/ri_pillowcheckBox" />
 
     <CheckBox
         android:id="@+id/ri_tissuecheckBox"
@@ -177,10 +177,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="167dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView32"
-        app:layout_constraintTop_toBottomOf="@+id/ri_toothpastecheckBox"
-        android:buttonTint="@color/white"/>
+        app:layout_constraintTop_toBottomOf="@+id/ri_toothpastecheckBox" />
 
     <CheckBox
         android:id="@+id/ri_hangercheckBox"
@@ -188,17 +188,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="33dp"
+        android:buttonTint="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView33"
-        app:layout_constraintTop_toBottomOf="@+id/ri_tissuecheckBox"
-        android:buttonTint="@color/white"/>
+        app:layout_constraintTop_toBottomOf="@+id/ri_tissuecheckBox" />
 
     <Button
         android:id="@+id/ri_cancelBtn"
         android:layout_width="160dp"
-        android:layout_height="54dp"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/red"
         android:text="@android:string/cancel"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -207,9 +207,9 @@
     <Button
         android:id="@+id/ri_confirmBtn"
         android:layout_width="160dp"
-        android:layout_height="54dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/button_Green"
         android:text="@string/confirm"
         app:layout_constraintBottom_toBottomOf="parent"

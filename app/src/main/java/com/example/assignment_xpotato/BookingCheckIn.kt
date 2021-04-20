@@ -18,7 +18,7 @@ class BookingCheckIn : AppCompatActivity() {
         val booking_checkinBtn = findViewById<Button>(R.id.bc_booking_CheckInBtn)
         val fiosdgjfd : String = "100"
         var fidj : Int = fiosdgjfd.toInt()+1
-        var roomNumberTv = findViewById<TextView>(R.id.room_numberTV)
+        var roomNumberTv = findViewById<TextView>(R.id.bc_room_numberTV)
 
         roomNumberTv.setText(fidj.toString())
 

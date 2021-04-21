@@ -1,5 +1,6 @@
 package com.example.assignment_xpotato
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -9,13 +10,36 @@ class food_beverage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food_beverage)
+
+        var intent = intent
+        val roomNumber = intent.getStringExtra("roomNumber")
+        findViewById<TextView>(R.id.fb_RoomTV).setText(roomNumber)
+
+        val cancelBtn = findViewById<Button>(R.id.fb_cancelBtn)
+        cancelBtn.setOnClickListener(){
+            val intent = Intent (this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        val backBtn = findViewById<Button>(R.id.fb_backBtn)
+        backBtn.setOnClickListener(){
+            val intent = Intent (this, RoomService::class.java)
+            startActivity(intent)
+        }
+
+      /*  val confirmBtn = findViewById<Button>(R.id.ri_confirmBtn)
+        confirmBtn.setOnClickListener(){
+            val intent = Intent (this, RoomService::class.java)
+            Toast.makeText(this, "$roomNumber is going to be refilled.", Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+        }*/
+
         var chickenChopQty : Int = 0
         var fishChipsQty : Int = 0
         var macCheeseQty : Int = 0
         var spaghettiQty : Int = 0
         var champagneQty : Int = 0
         var redWineQty : Int = 0
-        var cocaColaQty : Int = 0
         val chickenChopPrice = 13.90
         val spaghettiPrice = 8.90
         val fishChipsPrice = 13.90

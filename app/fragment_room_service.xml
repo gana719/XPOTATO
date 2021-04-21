@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/rsf_refillItemBtn"
+        android:layout_width="165dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="184dp"
+        android:text="Refill Item"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1B3CDD"
+        app:layout_constraintEnd_toEndOf="@+id/rsf_foodAndBeverageBtn"
+        app:layout_constraintStart_toStartOf="@+id/rsf_roomCleaningBtn"
+        app:layout_constraintTop_toBottomOf="@+id/rsf_roomNumber" />
+
+    <Button
+        android:id="@+id/rsf_foodAndBeverageBtn"
+        android:layout_width="165dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="28dp"
+        android:text="Food and Beverage"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1B3CDD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rsf_roomNumber" />
+
+    <TextView
+        android:id="@+id/rsf_roomNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rsf_backBtn"
+        android:layout_width="71dp"
+        android:layout_height="33dp"
+        android:background="@color/red"
+        android:text="Back"
+        android:textSize="12sp"
+        app:backgroundTint="@color/red"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rsf_roomCleaningBtn"
+        android:layout_width="165dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="72dp"
+        android:text="Room Cleaning"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1B3CDD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rsf_roomNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

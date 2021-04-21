@@ -192,11 +192,11 @@
         android:id="@+id/c_towelBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
+        android:layout_marginStart="117dp"
         android:layout_marginTop="24dp"
+        android:buttonTint="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView35"
-        app:layout_constraintTop_toBottomOf="@+id/textView34"
-        android:buttonTint="@color/white"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <CheckBox
         android:id="@+id/c_lampBtn"
@@ -212,21 +212,11 @@
         android:id="@+id/c_pillowBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
+        android:layout_marginStart="117dp"
         android:layout_marginTop="8dp"
+        android:buttonTint="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView36"
-        app:layout_constraintTop_toBottomOf="@+id/c_towelBtn"
-        android:buttonTint="@color/white"/>
-
-    <CheckBox
-        android:id="@+id/c_pillowBtn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toEndOf="@+id/textView36"
-        app:layout_constraintTop_toBottomOf="@+id/c_towelBtn"
-        android:buttonTint="@color/white"/>
+        app:layout_constraintTop_toBottomOf="@+id/c_towelBtn" />
 
     <CheckBox
         android:id="@+id/c_sofaBtn"
@@ -312,7 +302,6 @@
 
     <Button
         android:id="@+id/c_topBackBtn"
-        style="@android:style/Widget.Material.Button.Borderless"
         android:layout_width="71dp"
         android:layout_height="33dp"
         android:layout_marginStart="16dp"

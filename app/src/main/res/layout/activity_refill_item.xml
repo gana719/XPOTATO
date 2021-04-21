@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/booking_title3" />
 
     <TextView
-        android:id="@+id/fb_RoomTV2"
+        android:id="@+id/ri_roomNumberTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"

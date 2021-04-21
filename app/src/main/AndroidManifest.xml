@@ -16,6 +16,8 @@
         <activity
             android:name=".Checklist"
             android:exported="true" />
+        <activity android:name=".Room" android:exported="true"/>
+        <activity android:name=".RoomService" android:exported="true"/>
         <activity
             android:name=".refill_item"
             android:exported="true" />

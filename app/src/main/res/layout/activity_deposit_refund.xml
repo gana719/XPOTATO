@@ -84,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="44dp"
-        android:text="A501"
+        android:text="TextView"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/textView42"
@@ -259,27 +259,15 @@
         app:layout_constraintTop_toBottomOf="@+id/dr_guestICTV" />
 
     <TextView
-        android:id="@+id/textView59"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="54dp"
-        android:text="TextView"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/textView58"
-        app:layout_constraintTop_toBottomOf="@+id/dr_guestEmailTV" />
-
-    <TextView
         android:id="@+id/dr_depositPaidTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="54dp"
-        android:text="TextView"
+        android:text="200.0"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/textView58"
+        app:layout_constraintStart_toEndOf="@+id/textView76"
         app:layout_constraintTop_toBottomOf="@+id/dr_guestEmailTV" />
 
     <TextView
@@ -370,12 +358,12 @@
         android:id="@+id/dr_brokenItemChargeTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/textView62"
+        app:layout_constraintStart_toEndOf="@+id/textView78"
         app:layout_constraintTop_toBottomOf="@+id/dr_missingItemChargeTV" />
 
     <TextView
@@ -400,7 +388,7 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/textView60"
-        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+        app:layout_constraintTop_toBottomOf="@+id/dr_depositPaidTV" />
 
     <TextView
         android:id="@+id/textView77"
@@ -412,7 +400,7 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/textView60"
-        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+        app:layout_constraintTop_toBottomOf="@+id/textView76" />
 
     <Button
         android:id="@+id/dr_backBtn"

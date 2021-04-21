@@ -1,6 +1,8 @@
 package com.example.assignment_xpotato
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.DataSnapshot
@@ -46,24 +48,11 @@ class MainActivity : AppCompatActivity(), BookingAdapter.OnItemClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_test)
+        setContentView(R.layout.activity_main)
 
-        //val btnInsert: Button = findViewById(R.id.insertBtn)
+        val roomBtn = findViewById<Button>(R.id.h_roomBtn)
+        val roomServiceBtn = findViewById<Button>(R.id.h_roomServiceBtn)
 
-
-
-
-
-
-        /*btnInsert.setOnClickListener() {
-            val name: String = findViewById<TextView>(R.id.inputName).text.toString()
-            val phone: String = findViewById<TextView>(R.id.inputPhone).text.toString()
-
-            bookingID++
-
-            A101.child(bookingID.toString()).child("Name").setValue(name)
-            A101.child(bookingID.toString()).child("Phone Number").setValue(phone)
-        }*/
 
         var getData = object: ValueEventListener {
             override fun onCancelled(error: DatabaseError) {
@@ -85,8 +74,8 @@ class MainActivity : AppCompatActivity(), BookingAdapter.OnItemClickListener {
                     for (s in snapshot.children) {
                         arrBooking += BookingView(
                             s.child("Name").getValue().toString(),
-                            s.child("Phone Number").getValue().toString()
-
+                            s.child("Phone Number").getValue().toString(),
+                            s.key, s.child("Status").getValue().toString().toInt()
                         )
                     }
                 }
@@ -107,6 +96,16 @@ class MainActivity : AppCompatActivity(), BookingAdapter.OnItemClickListener {
 //            q.addValueEventListener(getData)
 //            q.addListenerForSingleValueEvent(getData)
 //        }
+
+
+        roomBtn.setOnClickListener{
+            val intent = Intent(this, Room::class.java)
+            startActivity(intent)
+        }
+        roomServiceBtn.setOnClickListener{
+            val intent = Intent(this, RoomService::class.java)
+            startActivity(intent)
+        }
 
 
     }

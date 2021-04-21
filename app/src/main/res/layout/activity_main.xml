@@ -43,7 +43,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
     <Button
-        android:id="@+id/roomBtn"
+        android:id="@+id/h_roomBtn"
         android:layout_width="165dp"
         android:layout_height="79dp"
         android:layout_marginStart="136dp"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <Button
-        android:id="@+id/roomServiceBtn"
+        android:id="@+id/h_roomServiceBtn"
         android:layout_width="165dp"
         android:layout_height="79dp"
         android:layout_marginStart="136dp"
@@ -70,6 +70,6 @@
         app:backgroundTint="#1B3CDD"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/roomBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/h_roomBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

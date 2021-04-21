@@ -87,8 +87,8 @@
         android:id="@+id/imageView3"
         android:layout_width="239dp"
         android:layout_height="161dp"
+        android:layout_marginStart="84dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bookingDetail_title"
         app:srcCompat="@drawable/hotel_room_image" />
@@ -314,10 +314,10 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/textView16"
-        app:layout_constraintTop_toBottomOf="@+id/bd_CheckInDateTV2" />
+        app:layout_constraintTop_toBottomOf="@+id/bd_bookIDTV" />
 
     <TextView
-        android:id="@+id/bd_CheckInDateTV2"
+        android:id="@+id/bd_bookIDTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
